@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 4199313323
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 93bf81bf5de7b835af7a6adeb59c64d5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 12da798fbf3a6c0c342cc56cb1a6efdf
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Res/Image/Enemys.png
+- Assets/Res/Image/BackGround.jpg
+- Assets/Res/Image/UIView.png
+- Assets/Res/Image/Shield.png
+- Assets/Res/Image/Flag.png
+- Assets/Res/Image/Title.bmp
+- Assets/Res/Image/SandLand.png
+- Assets/Res/Image/Bonus.png
+- Assets/Res/Image/Limition.png
+- Assets/Res/Image/Map.png
+- Assets/Res/Image/Bullet.png
+- Assets/Res/Image/Player2.png
+- Assets/Res/Image/Player1.png
+- Assets/Res/Image/UIGameOver.png
+- Assets/Res/Image/Born.png
+- Assets/Res/Image/Explode1.png
+- Assets/Res/Image/Curtain.jpg
+- Assets/Res/Image/Ocean2.png
+- Assets/Res/Image/Explode2.png
+Dependencies: []

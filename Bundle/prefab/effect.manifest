@@ -1,0 +1,57 @@
+ManifestFileVersion: 0
+CRC: 1981812502
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ef10a940b878e2cd3dc4876d0abc1532
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 085bb0cd4f36fcf57da9d433360e8e8f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d27b1dab58c98454aaba6e6980392f83, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 25b628a4ae108bc43a0d6e66a88e9617, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 277ec6eeb005dcd42be8547f716bb795, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7b6b43590cea17849a2fe14983eb7f32, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Res/Prefab/Effect/EnemyImage.prefab
+- Assets/Res/Prefab/Effect/BulletExplosion.prefab
+- Assets/Res/Prefab/Effect/Born.prefab
+- Assets/Res/Prefab/Effect/TankExplosion.prefab
+- Assets/Res/Prefab/Effect/Shield.prefab
+Dependencies:
+- E:/Unity Project/BattleCityRemix/Assets/../Bundle/audio
+- E:/Unity Project/BattleCityRemix/Assets/../Bundle/image

@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 61281046
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: main
+      Dependencies: {}
+    Info_1:
+      Name: audio
+      Dependencies: {}
+    Info_2:
+      Name: image
+      Dependencies: {}
+    Info_3:
+      Name: levelconfig
+      Dependencies: {}
+    Info_4:
+      Name: prefab/bonus
+      Dependencies:
+        Dependency_0: image
+    Info_5:
+      Name: prefab/bullet
+      Dependencies:
+        Dependency_0: image
+    Info_6:
+      Name: prefab/effect
+      Dependencies:
+        Dependency_0: audio
+        Dependency_1: image
+    Info_7:
+      Name: prefab/enemy
+      Dependencies:
+        Dependency_0: image
+    Info_8:
+      Name: prefab/mapelement
+      Dependencies:
+        Dependency_0: image
+    Info_9:
+      Name: prefab/player
+      Dependencies:
+        Dependency_0: audio
+        Dependency_1: image
+    Info_10:
+      Name: prefab/ui
+      Dependencies:
+        Dependency_0: image
+    Info_11:
+      Name: prefab/mapeditor
+      Dependencies:
+        Dependency_0: image

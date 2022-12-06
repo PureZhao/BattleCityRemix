@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 676625448
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f27294a2ca91f9a2d5b545457cae6a6d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Res/LevelConfig/24.json
+- Assets/Res/LevelConfig/23.json
+- Assets/Res/LevelConfig/17.json
+- Assets/Res/LevelConfig/32.json
+- Assets/Res/LevelConfig/14.json
+- Assets/Res/LevelConfig/12.json
+- Assets/Res/LevelConfig/3.json
+- Assets/Res/LevelConfig/25.json
+- Assets/Res/LevelConfig/31.json
+- Assets/Res/LevelConfig/15.json
+- Assets/Res/LevelConfig/20.json
+- Assets/Res/LevelConfig/30.json
+- Assets/Res/LevelConfig/11.json
+- Assets/Res/LevelConfig/34.json
+- Assets/Res/LevelConfig/21.json
+- Assets/Res/LevelConfig/35.json
+- Assets/Res/LevelConfig/9.json
+- Assets/Res/LevelConfig/16.json
+- Assets/Res/LevelConfig/19.json
+- Assets/Res/LevelConfig/5.json
+- Assets/Res/LevelConfig/27.json
+- Assets/Res/LevelConfig/28.json
+- Assets/Res/LevelConfig/8.json
+- Assets/Res/LevelConfig/1.json
+- Assets/Res/LevelConfig/18.json
+- Assets/Res/LevelConfig/29.json
+- Assets/Res/LevelConfig/6.json
+- Assets/Res/LevelConfig/13.json
+- Assets/Res/LevelConfig/22.json
+- Assets/Res/LevelConfig/33.json
+- Assets/Res/LevelConfig/2.json
+- Assets/Res/LevelConfig/4.json
+- Assets/Res/LevelConfig/26.json
+- Assets/Res/LevelConfig/7.json
+- Assets/Res/LevelConfig/10.json
+Dependencies: []

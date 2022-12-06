@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 1605651471
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3cebd2b3fc907f699f7fe162a7ac091c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 94835b5a4d96bb792474c64257517ad9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: dbcba3aee11f2c54c95ba3e58e87f5cd, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Res/Prefab/MapEditor/07.prefab
+- Assets/Res/Prefab/MapEditor/10.prefab
+- Assets/Res/Prefab/MapEditor/11.prefab
+- Assets/Res/Prefab/MapEditor/12.prefab
+- Assets/Res/Prefab/MapEditor/06.prefab
+- Assets/Res/Prefab/MapEditor/01.prefab
+- Assets/Res/Prefab/MapEditor/09.prefab
+- Assets/Res/Prefab/MapEditor/03.prefab
+- Assets/Res/Prefab/MapEditor/08.prefab
+- Assets/Res/Prefab/MapEditor/MapEditor.prefab
+- Assets/Res/Prefab/MapEditor/13.prefab
+- Assets/Res/Prefab/MapEditor/02.prefab
+- Assets/Res/Prefab/MapEditor/04.prefab
+- Assets/Res/Prefab/MapEditor/05.prefab
+Dependencies:
+- E:/Unity Project/BattleCityRemix/Assets/../Bundle/image

@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 217439884
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ad53bf220ac3554d511e17ecc75cce44
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cd8e3753cd86984491168f9f60e972b8
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5a392376cf327a540bbd7b0fa2e3cb0a, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Res/Prefab/Player/Player1.prefab
+- Assets/Res/Prefab/Player/Player2.prefab
+Dependencies:
+- E:/Unity Project/BattleCityRemix/Assets/../Bundle/audio
+- E:/Unity Project/BattleCityRemix/Assets/../Bundle/image

@@ -1,0 +1,39 @@
+ManifestFileVersion: 0
+CRC: 2169902126
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1459902733cdd7ab6576f30eedaee860
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 30fc4f843fb2aad8cea2848c42b436e8
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5562acb726c9e5c4fa79367e074be3d5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Res/Prefab/Bullet/Up.prefab
+- Assets/Res/Prefab/Bullet/Down.prefab
+- Assets/Res/Prefab/Bullet/Left.prefab
+- Assets/Res/Prefab/Bullet/Right.prefab
+Dependencies:
+- E:/Unity Project/BattleCityRemix/Assets/../Bundle/image

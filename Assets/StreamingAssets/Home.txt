@@ -1,0 +1,4 @@
+LeftBrick,0,-3.5,0
+RightBrick,-1,-3.5,0
+DownBrick,-0.25,-3,0
+DownBrick,-0.75,-3,0

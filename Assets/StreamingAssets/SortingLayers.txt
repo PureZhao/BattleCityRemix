@@ -1,0 +1,4 @@
+Grass
+Player
+Bonus
+SeaSand

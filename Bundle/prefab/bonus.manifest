@@ -1,0 +1,49 @@
+ManifestFileVersion: 0
+CRC: 3645294773
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3e509f12091d9bbed74e230a03c81dc7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9678217c6a6b9598c343c20efe4b3e9a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31c3610b58140114399a67054f07c671, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1d8ff0cffabae1c4dabc0a15672dd1e6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 11a37ff9a091ea8479ee31239fdfc493, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5e8f08dc4a34bea4dbae4f0faab85fc7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f82346e1b98c441912ba5b5ed868a7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9d6c18740ed4b934cbd89f2c7a61fa98, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Res/Prefab/Bonus/ProtectHeart.prefab
+- Assets/Res/Prefab/Bonus/Upgrade.prefab
+- Assets/Res/Prefab/Bonus/AddLife.prefab
+- Assets/Res/Prefab/Bonus/Shield.prefab
+- Assets/Res/Prefab/Bonus/DestroyEnemy.prefab
+- Assets/Res/Prefab/Bonus/StopEnemy.prefab
+Dependencies:
+- E:/Unity Project/BattleCityRemix/Assets/../Bundle/image
