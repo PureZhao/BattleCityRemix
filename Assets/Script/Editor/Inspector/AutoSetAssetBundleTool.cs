@@ -228,8 +228,8 @@ namespace PureOdinTools {
                 GetAllFile(Path.Combine(dir, directory.Name), ref paths);
             }
         }
-        [Button("sssssssssssssss")]
-        public void TestGetAll()
+        [Button("Export Version Control File")]
+        public void ExportVersionControlBundle()
         {
             JsonData data = new JsonData();
             data.SetJsonType(JsonType.Array);
