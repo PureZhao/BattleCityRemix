@@ -11,6 +11,7 @@ using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities.Editor;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Util;
 
 namespace PureOdinTools {
     [GlobalConfig(assetPath: "Odin")]
@@ -226,6 +227,22 @@ namespace PureOdinTools {
             {
                 GetAllFile(Path.Combine(dir, directory.Name), ref paths);
             }
+        }
+        [Button("sssssssssssssss")]
+        public void TestGetAll()
+        {
+            JsonData data = new JsonData();
+            data.SetJsonType(JsonType.Array);
+            List<string> path = new List<string>();
+            GetAllFile(GlobalConfig.AssetBundleDir, ref path);
+            data.Add(GlobalConfig.Version);
+            foreach(string p in path)
+            {
+                string realPath = p.Remove("Assets\\");
+                data.Add(realPath);
+            }
+            string jsonStorePath = Path.Combine(GlobalConfig.AssetBundleDir, "BundleList.json");
+            JsonHelper.WriteJson2File(data, jsonStorePath);
         }
 
     }
