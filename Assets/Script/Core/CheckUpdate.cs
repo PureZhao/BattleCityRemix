@@ -9,18 +9,19 @@ using UnityEngine.SceneManagement;
 
 public class CheckUpdate : MonoBehaviour
 {
-    void Start()
+    IEnumerator Start()
     {
         if (!Directory.Exists(GlobalConfig.AssetBundleDir))
         {
             Directory.CreateDirectory(GlobalConfig.AssetBundleDir);
         }
-        StartCoroutine(DownloadBundleList());
-        //SceneManager.LoadScene("Menu");
+        yield return StartCoroutine(DownloadBundleList());
+        SceneManager.LoadScene("Menu");
     }
 
     IEnumerator DownloadBundleList()
     {
+        Debug.Log("Check Version");
         float progress = 0f;
         UnityWebRequest request = UnityWebRequest.Get(GlobalConfig.BundleListUrl);
         request.SendWebRequest();
@@ -46,11 +47,13 @@ public class CheckUpdate : MonoBehaviour
                 string version = data[0].ToString();
                 if (IsVersionEqual(version))
                 {
+                    Debug.Log("Version is latest, need not update");
                     yield break;
                 }
                 else
                 {
-                    // 调用前还需要对MD5码
+                    Debug.Log("Version is not latest, run update");
+                    // 调用前还需要对MD5码，减轻下载压力
                     StartCoroutine(DownloadAssets(data));
                 }
                 
@@ -102,7 +105,9 @@ public class CheckUpdate : MonoBehaviour
         }
         FileStream stream = File.Create(GlobalConfig.VersionControlFile);
         byte[] versionContent = data[0].ToString().ToByteArray();
-        stream.Write(versionContent, 0, versionContent.Length); 
+        stream.Write(versionContent, 0, versionContent.Length);
+        Debug.Log("Update Finished");
+        yield return new WaitForSeconds(2f);
     }
 
     private bool IsVersionEqual(string netVersion)

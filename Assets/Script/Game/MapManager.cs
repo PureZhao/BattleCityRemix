@@ -4,8 +4,6 @@ using UnityEngine;
 using GameCore;
 using LitJson;
 using Util;
-using System.Xml.Linq;
-using static UnityEditor.PlayerSettings;
 
 public class MapManager : MonoBehaviour
 {
