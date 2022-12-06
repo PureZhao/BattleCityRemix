@@ -2,21 +2,27 @@ using LitJson;
 using System;
 using System.Collections;
 using System.IO;
+using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class CheckUpdate : MonoBehaviour
 {
     void Start()
     {
+        if (!Directory.Exists(GlobalConfig.AssetBundleDir))
+        {
+            Directory.CreateDirectory(GlobalConfig.AssetBundleDir);
+        }
         StartCoroutine(DownloadBundleList());
+        //SceneManager.LoadScene("Menu");
     }
 
     IEnumerator DownloadBundleList()
     {
         float progress = 0f;
         UnityWebRequest request = UnityWebRequest.Get(GlobalConfig.BundleListUrl);
-        string filename = (Path.GetFileName(GlobalConfig.BundleListUrl));
         request.SendWebRequest();
         if (request.isNetworkError || request.isHttpError)
         {
@@ -34,23 +40,28 @@ public class CheckUpdate : MonoBehaviour
             {
                 progress = 1;
                 byte[] bytes = request.downloadHandler.data;
-                SaveAsset(GlobalConfig.AssetBundleDir, filename, bytes, () =>
+                string content = Encoding.UTF8.GetString(bytes);
+                JsonData data = JsonMapper.ToObject(content);
+                // 对版本
+                string version = data[0].ToString();
+                if (IsVersionEqual(version))
                 {
-                    StartCoroutine(DownloadAssets());
-                });
+                    yield break;
+                }
+                else
+                {
+                    // 调用前还需要对MD5码
+                    StartCoroutine(DownloadAssets(data));
+                }
+                
             }
         }
     }
 
-
-    IEnumerator DownloadAssets()
+    // 需要更新才调用
+    IEnumerator DownloadAssets(JsonData data)
     {
-        // 等待两秒 等待BundleList.json
-        yield return new WaitForSeconds(2f);
         // 获取所有bundle
-        string json = File.ReadAllText(GlobalConfig.BundleListLocalUrl);
-        JsonData data = JsonMapper.ToObject(json);
-        data.SetJsonType(JsonType.Array);
         for(int i = 1;i < data.Count; i++)
         {
             // 用Gitee，raw.githubusercontent.com有时候抽风连不上
@@ -84,7 +95,21 @@ public class CheckUpdate : MonoBehaviour
                 }
             }
         }
-        
+        // 更新版本控制文件
+        if (File.Exists(GlobalConfig.VersionControlFile))
+        {
+            File.Delete(GlobalConfig.VersionControlFile);
+        }
+        FileStream stream = File.Create(GlobalConfig.VersionControlFile);
+        byte[] versionContent = data[0].ToString().ToByteArray();
+        stream.Write(versionContent, 0, versionContent.Length); 
+    }
+
+    private bool IsVersionEqual(string netVersion)
+    {
+        if (!File.Exists(GlobalConfig.VersionControlFile))
+            return false;
+        return File.ReadAllText(GlobalConfig.VersionControlFile) == netVersion;
     }
 
     /// <summary>
@@ -93,7 +118,7 @@ public class CheckUpdate : MonoBehaviour
     /// <param name="path">本地保存路径</param>
     /// <param name="filename">文件名称带后缀</param>
     /// <param name="bytes">byte数据</param>
-    public void SaveAsset(string path, string filename, byte[] bytes, Action action = null)
+    public void SaveAsset(string path, string filename, byte[] bytes)
     {
         string filePath = Path.Combine(path, filename);
         Stream sw = null;
@@ -114,7 +139,6 @@ public class CheckUpdate : MonoBehaviour
         sw.Close();
         sw.Dispose();
         //Debug.Log(filename + "成功保存到本地~");
-        action?.Invoke();
     }
 
 }

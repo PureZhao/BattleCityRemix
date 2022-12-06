@@ -235,7 +235,7 @@ namespace PureOdinTools {
             data.SetJsonType(JsonType.Array);
             List<string> path = new List<string>();
             GetAllFile(GlobalConfig.AssetBundleDir, ref path);
-            data.Add(GlobalConfig.Version);
+            data.Add("v0.0.1");
             foreach(string p in path)
             {
                 string realPath = p.Remove("Assets\\");
